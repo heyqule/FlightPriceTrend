@@ -181,6 +181,10 @@ Main Style
   vertical-align: top;
   padding: 0.25em 1em;
 }
+#flight-container .control-button {
+  display: inline-block;
+  min-width: 100px;
+}
 #flight-container .airport-selector {
   display: inline-block;
   width: 75%;

@@ -25,6 +25,16 @@ module.exports = {
             template: "./src/index.html",
             filename: "./index.html"
         })
-    ]
-
+    ],
+    optimization: {
+        splitChunks: {
+            cacheGroups: {
+                commons: {
+                    test: /[\\/]node_modules[\\/]/,
+                    name: 'vendors',
+                    chunks: 'all'
+                },
+            }
+        }
+    }
 };

@@ -27,8 +27,11 @@ export default class SearchForm extends React.Component {
                 <img src="/pub/images/arrival.png" alt="Arrival Airport" title="Arrival Airport"/>
                 <Select id="arrival" className="airport-selector" options={flightData.Airports} ref={(child) => { this._arrivalAirport = child; }}/>
             </div>
-            <div className="control">
+            <div className="control control-button">
                 <button id="search" onClick={this.fetchUrl.bind(this)}>Search</button>
+            </div>
+            <div className="control control-button">
+                <button id="add_fav" onClick={this.addFav.bind(this)}>Add Fav</button>
             </div>
         </div>;
     }
@@ -76,5 +79,18 @@ export default class SearchForm extends React.Component {
         }
 
         return true;
+    }
+
+    addFav()
+    {
+        var flightPath = this._departureAirport.select.commonProps.getValue()[0].value+'/'+this._arrivalAirport.select.commonProps.getValue()[0].value;
+
+        if(!this.validatePath(flightPath))
+        {
+            alert('Not Supported Flight Path: '+flightPath);
+            return this;
+        }
+
+        this._recentSearchContainer.addFav(flightPath);
     }
 }
