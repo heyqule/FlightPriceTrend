@@ -19,19 +19,19 @@ export default class FlightLink extends React.Component {
 
         var renderItems = [];
 
-        if(addFavCallback)
-        {
-            renderItems.push(<a className="fa fa-star" onClick={() => { addFavCallback(flightPath)}}>Fav</a>);
-        }
-
         renderItems.push(
             <a href={FlightDataManager.getKayakUrl(flightPath)+flightPath} target="_blank">{flightData.AirportObj[tokens[0]].label}
             <span className="fa fa-plane fa-2x"></span>{flightData.AirportObj[tokens[1]].label}</a>
         );
 
+        if(addFavCallback)
+        {
+            renderItems.push(<a className="addFav favAction fa fa-star" onClick={() => { addFavCallback(flightPath)}}>Fav</a>);
+        }
+
 
         if(removeCallback) {
-            renderItems.push(<a className="fa fa-trash" onClick={() => { removeCallback(flightPath)}}>Remove</a>);
+            renderItems.push(<a className="removeFav favAction fa fa-trash" onClick={() => { removeCallback(flightPath)}}>Remove</a>);
         }
 
 

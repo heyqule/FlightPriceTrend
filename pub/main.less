@@ -1,0 +1,270 @@
+/** Colors **/
+@color_bg:  white;
+@color_text : black;
+@color_link: #DD4B33;
+@color_link_hover: #6D6D6D;
+
+@color_header_bg:#2d2d2d;
+@color_header:#ccc;
+
+@color_twitter:#33ccff;
+
+@color_magento:#ef672f;
+
+@color_project: #e9b330;
+@color_project_subtitle: #2d2d2d;
+
+@color_post: #ccc;
+
+@color_watermark: #aaa;
+
+@color_nav_desktop_link:#2d2d2d;
+@color_nav_desktop_hover:#DD4B39;
+
+@color_nav_mobile_link:white;
+@color_nav_mobile_hover:#DD4B39;
+
+@color_loading_indicator:black;
+@color_loading_indicator_border:#DD4B39;
+@color_loading_indicator_bg:white;
+
+
+
+/****** Styling Starts *****/
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: @color_bg;
+  font: 14px/24px Arial, serif;
+  color: @color_text;
+  min-width: 320px;
+}
+
+body > * {
+  width: 100%;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  color: @color_link;
+  padding: 2px;
+  text-decoration: none;
+  cursor: pointer;
+
+}
+
+a:hover {
+  color: @color_link_hover;
+}
+
+a.image_link {
+  padding: 0;
+
+  :hover
+  {
+    box-shadow:0 5px 10px -5px @color_link;
+  }
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 1.75rem;
+  line-height:2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  line-height:1.75rem;
+}
+
+h3 {
+  font-size: 1.35rem;
+  line-height:1.6rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+  line-height:1.5rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+  line-height:1.5rem;
+}
+
+h5:before,h5:after
+{
+  content: " ** ";
+}
+
+h6 {
+  font-size: 1.25rem;
+  line-height:1.5rem;
+}
+
+h6:before,h6:after
+{
+  content: " !! ";
+}
+
+p {
+  margin: 10px 0;
+}
+
+img {
+  max-width:100%;
+}
+
+/** Utilities **/
+.clear {
+  clear: both;
+  margin: 0;
+  padding: 0;
+  width: 0;
+  height: 0;
+}
+
+.warp {
+  clear: both;
+}
+
+h1.title {
+  margin: 5px 0 15px 0;
+}
+
+/* HEADER */
+header {
+  background: @color_header_bg;
+  color: @color_header;
+  position: fixed;
+  top: 0;
+  height: 50px;
+  min-width: 300px;
+  z-index: 100;
+
+  aside {
+    vertical-align: top;
+    float: left;
+    padding-left: 10px;
+
+    img {
+      border: 1px solid white;
+      z-index: 900;
+    }
+  }
+}
+
+
+.container {
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+hr.divider {
+  display:none;
+}
+
+.page {
+  margin-top: 85px;
+}
+
+body.pushed, html.pushed {
+  overflow: hidden;
+}
+
+/**
+Main Style
+ */
+.post {
+  padding: 14px;
+  min-height: 25px;
+  border-radius: 5px;
+  box-shadow: 0 0 6px 1px #cccccc;
+  margin: 20px 0;
+  word-wrap: break-word;
+  position: relative;
+
+  h4 {
+    font-size: 16px;
+  }
+
+  .contents {
+    display: inline-block;
+    width: 100%;
+  }
+
+  .misc {
+    clear: both;
+    text-align: right;
+  }
+
+  .icon {
+    display: inline-block;
+    width: 3em;
+    height: 3em;
+    opacity: 0.5;
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+  }
+}
+
+#flight-container {
+  .control {
+    margin:0.5em 0;
+  }
+  .control img
+  {
+    width:3em;
+    height:3em;
+    vertical-align: middle;
+  }
+
+  .control span
+  {
+    height:2em;
+    font-size:2em;
+    vertical-align: top;
+    margin:0 1em;
+    cursor: pointer;
+  }
+
+  .control input
+  {
+    height:2em;
+    vertical-align: top;
+  }
+
+  .control button
+  {
+    height:2em;
+    vertical-align: top;
+    padding:0.25em 1em;
+  }
+
+  .airport-selector
+  {
+    display:inline-block;
+    width:75%;
+  }
+
+  #exchange {
+    font-size:2em;
+    margin:1em 0;
+    height:auto;
+  }
+
+  .favAction {
+    float:right;
+    clear-after:both;
+  }
+}

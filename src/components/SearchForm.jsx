@@ -13,23 +13,23 @@ export default class SearchForm extends React.Component {
 
     render() {
         var flightData = FlightDataManager.getData();
-        return <div className="posts">
+        return <div className="post">
             <h4>Custom Search</h4>
-            <span className="control">
+            <div className="control">
                 <img src="/pub/images/departure.png" alt="Departure Airport" title="Departure Airport"/>
-                <Select id="departure" options={flightData.Airports} ref={(child) => { this._departureAirport = child; }}/>
-            </span>
-            <span className="control">
+                <Select id="departure" className="airport-selector" options={flightData.Airports} ref={(child) => { this._departureAirport = child; }}/>
+            </div>
+            <div className="control">
                 <span id="exchange" className="fa fa-exchange" title="Swap Airport" onClick={this.swapAirport.bind(this)}>
                 </span>
-             </span>
-            <span className="control">
+             </div>
+            <div className="control">
                 <img src="/pub/images/arrival.png" alt="Arrival Airport" title="Arrival Airport"/>
-                <Select id="arrival" options={flightData.Airports} ref={(child) => { this._arrivalAirport = child; }}/>
-            </span>
-            <span className="control">
+                <Select id="arrival" className="airport-selector" options={flightData.Airports} ref={(child) => { this._arrivalAirport = child; }}/>
+            </div>
+            <div className="control">
                 <button id="search" onClick={this.fetchUrl.bind(this)}>Search</button>
-            </span>
+            </div>
         </div>;
     }
 

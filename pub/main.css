@@ -1,5 +1,3 @@
-/** Mixins **/
-/** Global Variables **/
 /** Colors **/
 /****** Styling Starts *****/
 * {
@@ -117,173 +115,20 @@ header aside img {
   max-width: 950px;
   margin: 0 auto;
 }
-a.mobile-menu-button {
-  display: none;
-  margin-top: 10px;
-  color: white;
-}
-a.mobile-menu-button:hover {
-  color: white;
-  text-shadow: 0 0 10px #fff, 0 0 20px #CDCDCD;
-  background: none;
-  box-shadow: none;
-}
-nav a {
-  text-decoration: none;
-  font-size: 18px;
-  font-weight: bold;
-  padding: 2px 0;
-  display: inline-block;
-}
-nav a:hover {
-  background: none;
-  box-shadow: none;
-}
-a#nav_project:hover {
-  color: #e9b330;
-}
-nav div.close {
-  display: block;
-  text-align: right;
-}
-nav a.close {
-  display: inline;
-}
-nav a i {
-  margin-right: 10px;
-}
-nav hr {
-  margin: 10px 0;
-  width: 93%;
-  border: none;
-  border-top: solid 1px #2d2d2d;
-}
-nav .search label {
-  display: block;
-}
-nav .search input,
-nav .search select {
-  max-width: 90%;
-  padding: 2px;
-}
-nav .search button {
-  margin-top: 10px;
-  padding: 2px 5px;
-}
-nav .watermark {
-  color: #aaaaaa;
-}
-/** Desktop Mobile **/
-nav.ʘㅈʘ {
-  clear: left;
-  max-width: 190px;
-  width: auto;
-  float: left;
-  padding-left: 10px;
-  position: fixed;
-}
-nav.ʘㅈʘ a {
-  color: #2d2d2d;
-}
-nav.ʘㅈʘ a:hover {
-  color: #dd4b39;
-}
-nav.ʘㅈʘ .search input {
-  border: 1px solid #2d2d2d;
-}
-/** Nav Mobile **/
-nav.۞ჴ۞ a {
-  color: white;
-}
-nav.۞ჴ۞ a:hover {
-  color: #dd4b39;
-}
-nav.۞ჴ۞ hr {
-  border-top: solid 1px white;
-}
-nav.۞ჴ۞ .search input {
-  border: 1px solid white;
-}
 hr.divider {
   display: none;
-}
-/** Social Icons */
-.´◔౪◔✂╰⋃╯ {
-  margin-right: 10px;
-}
-.´◔౪◔✂╰⋃╯ li {
-  display: inline-block;
-  padding-top: 10px;
-  margin-left: 10px;
-}
-.´◔౪◔✂╰⋃╯ a {
-  display: inline-block;
-  width: 24px;
-  height: 24px;
-  color: black;
-  padding: 0;
-}
-.´◔౪◔✂╰⋃╯ a a:hover {
-  background: none;
-}
-header .´◔౪◔✂╰⋃╯ {
-  float: right;
-}
-header .´◔౪◔✂╰⋃╯ a {
-  color: white;
-}
-#facebook_butt:hover {
-  color: #3b5998;
-}
-#linkedin_butt:hover {
-  color: #4875B4;
-}
-#twitter_butt:hover {
-  color: #33CCFF;
-}
-#github_butt:hover {
-  color: #dddddd;
-}
-#instagram_butt:hover {
-  color: #843f15;
-}
-#home_butt:hover {
-  color: #72FFEB;
 }
 .page {
   margin-top: 85px;
 }
-/* Saywut Container */
-#ಥ⌣ಥ {
-  width: auto;
-  margin: 10px;
+body.pushed,
+html.pushed {
+  overflow: hidden;
 }
-#ಥ⌣ಥ .header {
-  position: relative;
-}
-#ಥ⌣ಥ .header div {
-  display: inline-block;
-  vertical-align: middle;
-}
-/** Loading Indicator **/
-.－‸ლ {
-  position: fixed;
-  left: 35%;
-  top: 7.5%;
-  display: block;
-  border-radius: 5px;
-  border: 5px solid #dd4b39;
-  background: white;
-  color: black;
-  z-index: 1000;
-  padding: 5px 10px;
-  opacity: 0.75;
-}
-.－‸ლ i {
-  vertical-align: middle;
-}
-/** Post **/
-.posts {
+/**
+Main Style
+ */
+.post {
   padding: 14px;
   min-height: 25px;
   border-radius: 5px;
@@ -292,18 +137,18 @@ header .´◔౪◔✂╰⋃╯ a {
   word-wrap: break-word;
   position: relative;
 }
-.posts h4 {
+.post h4 {
   font-size: 16px;
 }
-.posts .contents {
+.post .contents {
   display: inline-block;
   width: 100%;
 }
-.posts .misc {
+.post .misc {
   clear: both;
   text-align: right;
 }
-.posts .icon {
+.post .icon {
   display: inline-block;
   width: 3em;
   height: 3em;
@@ -312,224 +157,41 @@ header .´◔౪◔✂╰⋃╯ a {
   right: 5px;
   bottom: 5px;
 }
-/* Twitter */
-.•ɞ• {
-  box-shadow: 0 0 6px 1px #33ccff;
-}
-.•ɞ• img.thumb {
-  display: block;
-  max-width: 100%;
-  max-height: 300px;
-  float: left;
-  margin-right: 10px;
-  cursor: pointer;
-}
-.•ɞ• img.large {
-  display: block;
-  max-width: 100%;
-  cursor: pointer;
-}
-.•ɞ• .reply {
-  background: none;
-  position: relative;
-  top: 5px;
-}
-.•ɞ• span.fa {
-  color: #33ccff;
-  vertical-align: middle;
-  display: inline-block;
-  margin-left: 10px;
-}
-.•ɞ• .twitter_card {
-  max-width: 740px;
-  width: 100%;
-  border-top: 1px solid #cccccc;
-  margin: 1em 0;
-}
-.•ɞ• .twitter_card img {
-  max-width: 220px;
-  max-height: 220px;
-  margin-top: 1em;
-  margin-right: 1em;
-  float: left;
-}
-.•ɞ• .twitter_card .title {
-  margin-top: 0.5em;
-}
-.•ɞ• .twitter_card .clear {
-  clear: both;
-}
-/* Projects */
-.凸ಠ皿ಠ凸 {
-  box-shadow: 0 0 6px 1px #e9b330;
-  position: relative;
-}
-.凸ಠ皿ಠ凸 h1,
-.凸ಠ皿ಠ凸 h2,
-.凸ಠ皿ಠ凸 h3,
-.凸ಠ皿ಠ凸 h4,
-.凸ಠ皿ಠ凸 h5,
-.凸ಠ皿ಠ凸 h6 {
+#flight-container .control {
   margin: 0.5em 0;
 }
-.凸ಠ皿ಠ凸 h1 {
-  margin-top: 0;
-}
-.凸ಠ皿ಠ凸 ul {
-  list-style: disc;
-  margin-left: 2em;
-}
-.凸ಠ皿ಠ凸 ul li {
-  padding-left: 0.5em;
-}
-.凸ಠ皿ಠ凸 ul.demac-site-list {
-  margin: 0 0 3em 0;
-  padding: 0;
-  list-style: none;
-}
-.凸ಠ皿ಠ凸 ul.demac-site-list li {
-  padding-left: 2.5em;
-  background: #cccccc;
-}
-.凸ಠ皿ಠ凸 ul.demac-site-list li:nth-of-type(even) {
-  background: white;
-}
-.凸ಠ皿ಠ凸 span.fa {
-  position: absolute;
-  right: 5px;
-  bottom: 5px;
-  font-size: 3em;
-  opacity: 0.5;
-  color: #e9b330;
-}
-.凸ಠ皿ಠ凸 span.work-duration {
+#flight-container .control img {
+  width: 3em;
+  height: 3em;
   vertical-align: middle;
 }
-.凸ಠ皿ಠ凸 img.company-logo {
-  vertical-align: middle;
+#flight-container .control span {
+  height: 2em;
+  font-size: 2em;
+  vertical-align: top;
+  margin: 0 1em;
+  cursor: pointer;
 }
-/* Magento posts */
-.magento {
-  box-shadow: 0 0 6px 1px #ef672f;
-}
-.magento span.icon {
-  background: url("/images/logo/magento.png");
-  background-size: 3em;
-  background-repeat: no-repeat;
-}
-.magento ul {
-  margin-bottom: 2em;
-}
-.magento ul li {
-  padding: 1em;
-}
-.magento ul li:nth-of-type(even) {
-  background: rgba(239, 103, 47, 0.15);
-}
-.unreal span.icon {
-  background: url("https://cdn1.unrealengine.com/2612671/billboard-s55fef21803-6f6a5cf2f6cb21576b22077ccc43277c.png");
-  background-position: -1825px 0;
-  background-size: 3em;
-  background-repeat: no-repeat;
-  width: 41px;
-  height: 36px;
-}
-.posts iframe.video {
-  width: 100%;
-  max-width: 720px;
-  height: auto;
-  margin: 0 auto;
-  margin-top: 1em;
-  border: none;
-}
-iframe[src="about:blank"] {
-  display: none;
-}
-.dialog {
-  display: none;
-}
-@media screen and (max-width: 960px) {
-  .凸ಠ皿ಠ凸 .details {
-    max-width: none;
-    display: block;
-  }
-  .凸ಠ皿ಠ凸 .image {
-    display: block;
-    margin: 0 auto;
-    width: 250px;
-  }
-  .凸ಠ皿ಠ凸 .image img {
-    max-height: 250px;
-    max-width: 250px;
-  }
-}
-@media screen and (max-width: 640px) {
-  .₍•ɞ•₎ img,
-  .₍•ɞ•₎ .twitter_card img {
-    display: block;
-    margin: 5px auto;
-    width: auto;
-    float: none;
-  }
-  a.mobile-menu-button {
-    float: left;
-    margin-left: 10px;
-    display: inline-block;
-  }
-  nav.ʘㅈʘ {
-    display: none;
-  }
-}
-.social-sharing {
-  margin: 10px 0;
-}
-.social-sharing > * {
-  display: inline-block;
+#flight-container .control input {
+  height: 2em;
   vertical-align: top;
 }
-.social-sharing .twitter-share-button {
-  margin-top: 5px;
+#flight-container .control button {
+  height: 2em;
+  vertical-align: top;
+  padding: 0.25em 1em;
 }
-div[id^='___plusone'] {
-  margin-top: 5px !important;
+#flight-container .airport-selector {
+  display: inline-block;
+  width: 75%;
 }
-@media screen and (max-width: 480px) {
-  .₍•ɞ•₎ img.thumb {
-    float: none;
-    margin: 0 auto;
-  }
+#flight-container #exchange {
+  font-size: 2em;
+  margin: 1em 0;
+  height: auto;
 }
-/* JQUERY UI css */
-.ui-widget-overlay {
-  background: black;
+#flight-container .favAction {
+  float: right;
+  clear-after: both;
 }
-.ui-dialog {
-  border: solid 5px rgba(0, 0, 0, 0.75);
-  box-shadow: 0 0 10px 5px white;
-}
-.ui-widget-header {
-  background: none;
-  border: none;
-  box-shadow: 0 4px 2px -2px grey;
-}
-/*Mobile Menu CSS Mod*/
-#۞ჴ۞ {
-  /* These styles MUST be included. Do not change. */
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  z-index: 500;
-  /* Specify the width of your pageslide here */
-  width: 175px;
-  min-width: 175px;
-  padding: 10px;
-  /* These styles are optional, and describe how the pageslide will look */
-  background-color: #2d2d2d;
-  color: #cccccc;
-}
-body.pushed,
-html.pushed {
-  overflow: hidden;
-}
-/****** Styling Ends *****/
+/*# sourceMappingURL=main.css.map */

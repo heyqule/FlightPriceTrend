@@ -16,14 +16,14 @@ export default class RecentSearchContainer extends React.Component {
 
     componentWillMount() {
         try {
-            this.setState({'recentDataList' : JSON.parse(sessionStorage.recentItems)});
+            this.setState({'recentDataList' : JSON.parse(sessionStorage.recentDataList)});
         } catch($e) {
             this.setState({'recentDataList' : []});
         }
     }
 
     render() {
-        return <div className="posts">
+        return <div className="post">
             <h4>Recent Search</h4>
             <ul>
             {this.state.recentDataList.map((value, index) => {

@@ -18,7 +18,7 @@ export default class FavContainer extends React.Component {
     }
 
     render() {
-        return <div className="posts">
+        return <div className="post">
             <h4>Fav Container</h4>
             <ul>
             {this.state.favDataList.map((value, index) => {
