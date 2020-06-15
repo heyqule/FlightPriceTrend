@@ -7,13 +7,15 @@ export default class FavContainer extends React.Component {
     {
         super(props)
         this.removeFav = this.removeFav.bind(this)
-    }
+        let favObj = ['YYZ/LAX','YYZ/HKG'];
+        if(typeof localStorage.fav != 'undefined') {
+            favObj = JSON.parse(localStorage.fav);
+        } else {
+            localStorage.setItem('fav',JSON.stringify(favObj));
+        }
 
-    componentWillMount() {
-        try {
-            this.setState({'favDataList' : JSON.parse(localStorage.fav)});
-        } catch($e) {
-            this.setState({'favDataList' : ['YYZ/LAX','YYZ/HKG']});
+        this.state = {
+            'favDataList': favObj
         }
     }
 

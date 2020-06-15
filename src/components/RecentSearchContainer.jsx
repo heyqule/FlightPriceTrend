@@ -12,13 +12,15 @@ export default class RecentSearchContainer extends React.Component {
         this.recentLimit = 10;
         this.favLimit = 20;
         this._favContainer = null;
-    }
 
-    componentWillMount() {
-        try {
-            this.setState({'recentDataList' : JSON.parse(sessionStorage.recentDataList)});
-        } catch($e) {
-            this.setState({'recentDataList' : []});
+        let recentDataList = [];
+        if(typeof sessionStorage.recentDataList != 'undefined')
+        {
+            recentDataList = JSON.parse(sessionStorage.recentDataList);
+        }
+
+        this.state = {
+            'recentDataList': recentDataList
         }
     }
 
